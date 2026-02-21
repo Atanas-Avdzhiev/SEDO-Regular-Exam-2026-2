@@ -8,7 +8,7 @@ pipeline{
                 }
             }
             steps{
-                bat "dotnet restore"
+                bat "dotnet restore --verbosity diagnostic"
             }
         }
         stage("Build the app"){
